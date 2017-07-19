@@ -1,0 +1,10 @@
+package com.dream404.springcloud;
+
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.Configuration;
+
+@Configuration("mysql")
+public class MySQL {
+	public String username;
+	public String password;
+}

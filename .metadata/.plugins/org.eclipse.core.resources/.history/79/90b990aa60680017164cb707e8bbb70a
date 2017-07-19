@@ -1,0 +1,5 @@
+package com.dream404.springcloud.eurekaproduce;
+
+public class HelloWordController {
+
+}

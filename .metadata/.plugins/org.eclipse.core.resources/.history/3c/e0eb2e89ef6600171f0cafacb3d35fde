@@ -1,0 +1,6 @@
+server:
+  context-path: /client
+  
+management:
+  security:
+    enabled: false

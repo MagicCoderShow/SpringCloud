@@ -1,0 +1,8 @@
+package com.dream404.springcloud.eurekacustomer;
+
+import org.springframework.stereotype.Component;
+
+@Component //加入spring bean中  
+public class HystrixClientFallback implements UserFeignClient{  
+
+} 

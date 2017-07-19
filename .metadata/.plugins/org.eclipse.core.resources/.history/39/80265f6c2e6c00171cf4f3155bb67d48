@@ -1,0 +1,13 @@
+package com.dream404.springcloud.eurekacustomer;
+@Configuration
+public class FooConfiguration {
+    @Bean
+    public Contract feignContractg() {
+        return new feign.Contract.Default();
+    }
+
+    @Bean
+    public BasicAuthRequestInterceptor basicAuthRequestInterceptor() {
+        return new BasicAuthRequestInterceptor("user", "password");
+    }
+}

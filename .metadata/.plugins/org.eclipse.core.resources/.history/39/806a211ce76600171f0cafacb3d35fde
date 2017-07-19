@@ -1,0 +1,15 @@
+server:
+  port: 9002
+  context-path: /Config
+
+management:
+  security:
+    enabled: false
+  
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://git.oschina.net/MagicCoderShow/SpringCloudConfig.git
+          search-paths: data

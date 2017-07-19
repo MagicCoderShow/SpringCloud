@@ -1,0 +1,17 @@
+server:
+  port: 9010
+
+spring:
+  application:
+    name: eureka-server1
+
+eureka:
+  instance:
+    hostname: localhost
+  server:
+    enable-self-preservation: false #关闭自我保护模式，（自我保护模式，即一个服务长时间没有发送心跳，eureka也不会将其删除，默认为true）
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+    serviceUrl:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/

@@ -1,0 +1,18 @@
+server:
+  context-path: /client
+  port: 9001
+  
+management:
+  security:
+    enabled: false
+    
+spring:
+  application:
+    name: eureka.client
+    
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:9002/eureka/
+  instance:
+    appname: eureka.client.01

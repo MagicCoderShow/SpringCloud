@@ -1,0 +1,11 @@
+package com.dream404.springcloud.eurekacustomer;
+
+import org.springframework.cloud.netflix.feign.FeignClient;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+
+@FeignClient(value="SERVICE-PRODUCE")
+public interface HelloService {
+	@PostMapping("/hello")
+    String Hello(@RequestParam(value = "name") String name);
+}

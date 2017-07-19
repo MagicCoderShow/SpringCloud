@@ -1,0 +1,11 @@
+package com.dream404.springcloud.eurekaproduce;
+
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class HelloWordController {
+	public String HelloWord(@RequestParam String name){
+		return name+":Hello Word !";
+	}
+}

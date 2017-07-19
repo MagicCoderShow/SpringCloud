@@ -1,0 +1,9 @@
+package com.dream404.springcloud;
+
+import org.springframework.boot.context.properties.ConfigurationProperties;
+
+@ConfigurationProperties(prefix="mysql")
+public class MySQL {
+	public String username;
+	public String password;
+}

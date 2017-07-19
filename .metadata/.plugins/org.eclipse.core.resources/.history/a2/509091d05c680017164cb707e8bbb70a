@@ -1,0 +1,8 @@
+spring:
+  cloud:
+    config:
+      name: client
+      profile: master
+      uri: http://localhost:9000/config
+  application:
+    name: eureka.client

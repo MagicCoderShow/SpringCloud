@@ -1,0 +1,12 @@
+server:
+  context-path: /client
+  port: 9001
+  
+management:
+  security:
+    enabled: false
+    
+    
+eureka:
+  client:
+    service-url: http:\//localhost:9002/eureka

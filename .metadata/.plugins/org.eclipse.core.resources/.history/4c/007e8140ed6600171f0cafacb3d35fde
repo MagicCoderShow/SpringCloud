@@ -1,0 +1,10 @@
+server:
+  context-path: /client
+  port: 9001
+  
+spring:
+  cloud:
+    config:
+      name: client
+      profile: master
+      uri: http://localhost:9000

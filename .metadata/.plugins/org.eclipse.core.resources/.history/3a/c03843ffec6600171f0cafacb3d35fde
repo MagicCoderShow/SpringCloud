@@ -1,0 +1,5 @@
+package com.dream404.springcloud;
+
+public class MySQLController {
+
+}

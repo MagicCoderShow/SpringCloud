@@ -1,0 +1,13 @@
+package com.dream404.springcloud.eurekacustomer;
+
+import org.springframework.stereotype.Component;
+
+@Component //加入spring bean中  
+public class HystrixClientFallback implements HelloService{
+
+	@Override
+	public String Hello(String name) {
+		return name+"正式服务器挂掉了，我出来溜一波";
+	}  
+
+} 
